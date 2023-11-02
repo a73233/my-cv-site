@@ -1,6 +1,7 @@
 <script>
   import { scrollToFooter } from "../utils/scrollUtils";
   import Step from "./Step.svelte";
+  import { base } from "$app/paths";
 
   let steps = [
     {
