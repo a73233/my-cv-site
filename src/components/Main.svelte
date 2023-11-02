@@ -17,7 +17,7 @@
       bottom_description: "Project Rating \u2192 18/20",
     },
     {
-      name: "Generating and Complexifying Artificial Neural Networks through Genetic Algorithms",
+      name: "Exploring the Evolution of Artificial Neural Networks through Genetic Algorithms",
       icon: "devicon-csharp-plain",
       description: "",
       bottom_description: "Project Rating \u2192 TBA/20",
@@ -50,12 +50,12 @@
       metric: "10x",
       name: "Always striving to learn more",
       description:
-        "As a dedicated programmer, I'm constantly pursuing knowledge and growth. Technology evolves rapidly, so I embrace each day as a chance to expand my skills and stay current. I find inspiration in programming's endless possibilities, using every challenge and project to enhance my expertise. Whether it's learning a new language, mastering a framework, or solving complex problems, my curiosity drives me to understand, create, and adapt. This pursuit empowers me to be a more proficient and adaptable programmer, contributing to the software development landscape's ongoing evolution.",
+        "As a dedicated programmer, I'm constantly pursuing knowledge and growth. Technology evolves rapidly, so I embrace each day as a chance to expand my skills and staying up to date. I find inspiration in programming's endless possibilities, using every challenge and project to enhance my expertise. Whether it's learning a new language, mastering a framework, or solving complex problems, my curiosity drives me to understand, create, and adapt. This pursuit empowers me to be a more proficient and adaptable programmer, contributing to the software development landscape's ongoing evolution.",
     },
     {
       name: "Responsible and Dependable",
       description:
-        "I take great pride in being responsible and dependable. I understand the impact of my work on people's lives and businesses. I prioritize delivering high-quality, efficient, and well-documented code that meets project needs. I'm committed to meeting deadlines, clear communication, and addressing issues promptly. Clients and teammates can rely on my transparency and trustworthiness in every project. In the collaborative world of programming, I'm the one others can count on, making responsibility and dependability both a professional standard and a personal ethos.",
+        "I take great pride in being responsible and dependable. I understand the impact of my work on people's lives and businesses. I prioritize delivering high-quality, efficiently, and well-documented code that meets project needs. I'm committed to meeting deadlines, clear communication, and addressing issues promptly. Clients and teammates can rely on my transparency and trustworthiness in every project. In the collaborative world of programming, I'm the one others can count on, making responsibility and dependability both a professional standard and a personal ethos.",
     },
     {
       name: "Flexible and Adaptable",
@@ -146,13 +146,13 @@
       <Step step={steps[0]}>
         <ul class="py-10">
           <li>
-            Architect and create a complex relational database in <strong
+            Structured, designed and created a complex relational database in <strong
               class="text-violet-400">MySQL</strong
             >;
           </li>
           <li>
-            Creation of a Java algorithm capable of automatically exporting the
-            data on a relational database in <strong class="text-violet-400"
+            Created a Java algorithm capable of automatically exporting the data
+            on a relational database in <strong class="text-violet-400"
               >MySQL</strong
             >
             and importing that information to a non-relational database in
@@ -164,7 +164,7 @@
       <Step step={steps[1]}>
         <ul class="py-14">
           <li>
-            Development of a new architecture capable of supporting the
+            Developed a new architecture capable of supporting the
             functionalities present in <strong class="text-violet-400"
               ><a href="http://ivy.di.uminho.pt/" target="_blank"
                 >Ivy Workbench</a
@@ -178,20 +178,20 @@
       <Step step={steps[2]}>
         <ul>
           <li>
-            Reverse engineer an application memory's space, probing for valuable
-            and valid live input data;
+            Reverse engineered an application memory's space, probing for
+            valuable and valid live input data;
           </li>
           <li>
-            Generate, evaluate, evolve and complexify <strong
+            Generated, evaluated, evolved and complexified <strong
               class="text-violet-400">artificial neural networks</strong
             >
             using the <strong class="text-violet-400">NEAT</strong> algorithm using
             the probed data as input;
           </li>
           <li>
-            Emulate the output of the generated <strong class="text-violet-400"
+            Emulated the output of the generated <strong class="text-violet-400"
               >neural networks</strong
-            > back into the running process for visible action and posterior evaluation.
+            > back into the running process for visible action and evaluation.
           </li>
         </ul>
       </Step>
@@ -210,9 +210,11 @@
       <Step step={steps_personal_projects[0]}>
         <ul class="py-10">
           <li>
-            Architect and create an application complete with an intuitive and
-            easy to use <strong class="text-violet-400">G.U.I.</strong> with
-            displayed custom parameters and settings, capable of receiving data
+            Structured, designed and created an application complete with an
+            intuitive and easy to use <strong class="text-violet-400"
+              >G.U.I.</strong
+            >
+            with displayed custom parameters and settings, capable of receiving data
             from an <strong class="text-violet-400">Excel</strong> file and
             converting it into an
             <strong class="text-violet-400">AutoHotKey</strong> script that can
@@ -231,12 +233,12 @@
       <Step step={steps_personal_projects[1]}>
         <ul class="py-14">
           <li>
-            Architect and create a fully fledged mobile application capable of
-            importing and storing data from an <strong class="text-violet-400"
-              >Excel</strong
+            Structured, designed and created a fully fledged mobile application
+            capable of importing and storing data from an <strong
+              class="text-violet-400">Excel</strong
             >
             file with a specified format and use the device's camera to scan barcodes,
-            compare them to the data stored in the application and update and save
+            compare them to the data stored in the local database to update and save
             the current amount in stock;
           </li>
 
@@ -255,9 +257,11 @@
       <Step step={steps_personal_projects[2]}>
         <ul>
           <li>
-            Architect and create an application complete with an intuitive and
-            easy to use <strong class="text-violet-400">G.U.I.</strong> with
-            displayed custom parameters and settings, capable of receiving data
+            Structured, designed and created an application complete with an
+            intuitive and easy to use <strong class="text-violet-400"
+              >G.U.I.</strong
+            >
+            with displayed custom parameters and settings, capable of receiving data
             from an <strong class="text-violet-400">Excel</strong> file and
             merging it to an existing
             <strong class="text-violet-400">Excel</strong>
@@ -401,7 +405,7 @@
     </div>
     <div class="mx-auto">
       <div class="flex items-center">
-        <p class="md:text-2xl ml-2 px-2">Made using</p>
+        <p class="md:text-2xl ml-2 px-2">Made with</p>
         <i class="devicon-svelte-plain" style="font-size: 3em;" />
         <p class="md:text-2xl ml-2 px-2">and</p>
         <i class="devicon-tailwindcss-plain" style="font-size: 3em;" />
