@@ -86,7 +86,7 @@
           of Minho.
         </p>
         <p class="py-5">
-          I'm a pragmatist and minimalist at heart always striving to find
+          I'm a pragmatist and a minimalist at heart always striving to find
           solutions in the most efficient and effective way possible.
         </p>
       </div>
@@ -105,7 +105,7 @@
       <img
         src={"images/profile.png"}
         alt="Zetane Engine"
-        class="object-cover z-[2] max-h-[70vh]"
+        class="object-cover z-[2] max-h-[60vh]"
       />
     </div>
     <!-- <div  class="flex p-0.5 relative max-w-[700px] w-full mx-auto">
@@ -156,7 +156,7 @@
               >MySQL</strong
             >
             and importing that information to a non-relational database in
-            <strong class="text-violet-400">MongoDB</strong>;
+            <strong class="text-violet-400">MongoDB</strong>.
           </li>
         </ul>
       </Step>
@@ -171,7 +171,7 @@
               ></strong
             >, a model based tool for the analysis of interactive systems
             designs, using the concept of modularity introduced in
-            <strong class="text-violet-400">Java 9</strong>;
+            <strong class="text-violet-400">Java 9</strong>.
           </li>
         </ul>
       </Step>
@@ -223,7 +223,7 @@
             Made using <strong class="text-violet-400">Tauri</strong> framework,
             for the frontend
             <strong class="text-violet-400">TypeScript, HTML and CSS</strong>
-            was used and <strong class="text-violet-400">Rust</strong> for the backend;
+            was used and <strong class="text-violet-400">Rust</strong> for the backend.
           </li>
         </ul>
       </Step>
@@ -248,7 +248,7 @@
           <li>
             Constructed using <strong class="text-violet-400">Kotlin</strong>
             and the
-            <strong class="text-violet-400">Android Studio IDE</strong>
+            <strong class="text-violet-400">Android Studio IDE</strong>.
           </li>
         </ul>
       </Step>
@@ -279,7 +279,7 @@
           <li>
             Acomplished in <strong class="text-violet-400">C#</strong>, using
             Windows Forms for the
-            <strong class="text-violet-400">G.U.I.</strong>;
+            <strong class="text-violet-400">G.U.I.</strong>
           </li>
         </ul>
       </Step>

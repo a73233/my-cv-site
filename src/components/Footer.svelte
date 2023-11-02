@@ -1,7 +1,8 @@
 <footer
   class="py-20 sm:py-20 blueShadow border-t rounded-lg border-solid border-violet-950 flex flex-col gap-4 sm:gap-8 justify-center items-center"
 >
-  <p class="px-2 py-2 bg-slate-100 text-slate-950 font-medium">
+  <!-- <p class="px-2 py-2 bg-slate-100 text-slate-950 font-medium"> -->
+  <p class="px-2 py-2 text-slate-100 font-semibold text-xl">
     Connect with me &darr;
   </p>
   <div class="flex flex-col gap-4 items-center justify-center">
