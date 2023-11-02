@@ -338,7 +338,7 @@
       The <span class="text-violet-400">Complete</span> Package
     </h5>
     <div
-      class="flex flex-col overflow-x-auto gap-10 max-w-[800px] mx-auto w-full table-with-shadow hover:shadow-2xl duration-500"
+      class="flex flex-col overflow-x-auto gap-10 max-w-[900px] mx-auto w-full table-with-shadow hover:shadow-2xl duration-500 text-lg"
     >
       <table class="bg-slate-900 rounded text-center">
         <thead class={"border-b border-solid border-slate-200"}>
@@ -355,7 +355,7 @@
         <tbody>
           <tr class="border-b border-solid border-slate-200">
             <td
-              class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
+              class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-base"
               >Dedication</td
             >
             <td><i class="fa-solid fa-xmark text-slate-500" /></td>
@@ -365,7 +365,7 @@
           </tr>
           <tr class="border-b border-solid border-slate-200">
             <td
-              class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
+              class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-base"
               >Critical Thought</td
             >
             <td><i class="fa-solid fa-xmark text-slate-500" /></td>
@@ -375,7 +375,7 @@
           </tr>
           <tr>
             <td
-              class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
+              class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-base"
               >Interpersonal Skills</td
             >
             <td><i class="fa-solid fa-check text-green-500" /></td>
@@ -385,7 +385,7 @@
           </tr>
           <tr class="border-t border-solid border-slate-200">
             <td
-              class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
+              class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-base"
               >Progamming Ability</td
             >
             <td><i class="fa-solid fa-check text-green-500" /></td>
