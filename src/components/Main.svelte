@@ -210,22 +210,26 @@
       <Step step={steps_personal_projects[0]}>
         <ul class="py-10">
           <li>
-            Structured, designed and created an application complete with an
-            intuitive and easy to use <strong class="text-violet-400"
-              >G.U.I.</strong
+            Designed an application with an intuitive <strong
+              class="text-violet-400">G.U.I.</strong
             >
-            with displayed custom parameters and settings, capable of receiving data
-            from an <strong class="text-violet-400">Excel</strong> file and
-            converting it into an
+            with custom parameters and settings;
+          </li>
+          <li>
+            Capable of receiving data from an <strong class="text-violet-400"
+              >Excel</strong
+            >
+            file and converting it into an
             <strong class="text-violet-400">AutoHotKey</strong> script that can
             be used to automate the process of inserting barcodes into a
             <strong class="text-violet-400">SAGE</strong> form for printing;
           </li>
           <li>
-            Made using <strong class="text-violet-400">Tauri</strong> framework,
-            for the frontend
+            Application made with <strong class="text-violet-400">Tauri</strong>
+            framework.
             <strong class="text-violet-400">TypeScript, HTML and CSS</strong>
-            was used and <strong class="text-violet-400">Rust</strong> for the backend.
+            was used for the frontend and
+            <strong class="text-violet-400">Rust</strong> was used for the backend.
           </li>
         </ul>
       </Step>
@@ -233,10 +237,8 @@
       <Step step={steps_personal_projects[1]}>
         <ul class="py-14">
           <li>
-            Structured, designed and created a fully fledged mobile application
-            capable of importing and storing data from an <strong
-              class="text-violet-400">Excel</strong
-            >
+            Created a fully fledged mobile application capable of importing and
+            storing data from an <strong class="text-violet-400">Excel</strong>
             file with a specified format and use the device's camera to scan barcodes,
             compare them to the data stored in the local database to update and save
             the current amount in stock;
@@ -257,10 +259,8 @@
       <Step step={steps_personal_projects[2]}>
         <ul>
           <li>
-            Structured, designed and created an application complete with an
-            intuitive and easy to use <strong class="text-violet-400"
-              >G.U.I.</strong
-            >
+            Architectured an application complete with an intuitive and easy to
+            use <strong class="text-violet-400">G.U.I.</strong>
             with displayed custom parameters and settings, capable of receiving data
             from an <strong class="text-violet-400">Excel</strong> file and
             merging it to an existing
@@ -268,7 +268,7 @@
             for the purposes of inventory safe keeping;
           </li>
           <li>
-            The algorithm efficient traverses the <strong
+            The algorithm efficiently traverses the <strong
               class="text-violet-400">Excel</strong
             >
             file and compares the reference code of each item to the reference code
