@@ -20,7 +20,7 @@
       name: "Exploring the Evolution of Artificial Neural Networks through Genetic Algorithms",
       icon: "devicon-csharp-plain",
       description: "",
-      bottom_description: "Project Rating \u2192 TBA/20",
+      bottom_description: "Project Rating \u2192 18/20",
     },
   ];
 
