@@ -2,6 +2,7 @@
   import { scrollToFooter } from "../utils/scrollUtils";
   import Step from "./Step.svelte";
   import { base } from "$app/paths";
+  import { onMount } from "svelte";
 
   let steps = [
     {
@@ -63,6 +64,35 @@
         "I embrace flexibility and adaptability as essential traits in my role as a programmer. Technology evolves rapidly, demanding agile problem-solving. I excel in various languages and eagerly learn new ones. I stay current with industry trends. I approach novel challenges with creativity. I adapt to diverse teams and stakeholders, effectively bridging technical and non-technical gaps. In the dynamic world of programming, I'm well-prepared to tackle any obstacle and seize opportunities.",
     },
   ];
+
+  let benefitRefs = [];
+
+  onMount(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("scale-125");
+          } else {
+            entry.target.classList.remove("scale-125");
+          }
+        });
+      },
+      {
+        threshold: 0.95
+      }
+    );
+
+    benefitRefs.forEach((ref) => {
+      observer.observe(ref);
+    });
+
+    return () => {
+      benefitRefs.forEach((ref) => {
+        observer.unobserve(ref);
+      });
+    };
+  });
 </script>
 
 <main class="flex flex-col flex-1 p-4">
@@ -75,7 +105,7 @@
     >
       <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
         Hi! I'm <span class="poppins text-violet-400">Luís</span> Neto
-        <br />Junior
+        <br />Software
         <span class="poppins text-violet-400">Developer</span>
       </h2>
       <div class="text-base sm:text-lg md:text-xl">
@@ -105,7 +135,7 @@
       <img
         src={"images/profile.png"}
         alt="Zetane Engine"
-        class="object-cover z-[2] max-h-[60vh] transition-transform duration-300 transform hover:scale-110 hover:-rotate-6"
+        class="object-cover z-[2] max-h-[60vh] transition-transform duration-300 transform hover:scale-95 hover:-rotate-3"
       />
     </div>
     <!-- <div  class="flex p-0.5 relative max-w-[700px] w-full mx-auto">
@@ -178,26 +208,23 @@
       <Step step={steps[2]}>
         <ul>
           <li>
-            Reverse engineered an application memory's space, probing for
-            valuable and valid live input data;
+            Reverse engineered an application's memory space using dynamic and static analysis.
+          </li>
+          <li>Established a sensory layer from the data gathered from the reverse engineering process.</li>
+          <li>
+            Used the <strong class="text-violet-400">NEAT</strong> algorithm
+            to generate, evaluate, evolve and complexify <strong
+              class="text-violet-400">artificial neural networks</strong>.
           </li>
           <li>
-            Generated, evaluated, evolved and complexified <strong
-              class="text-violet-400">artificial neural networks</strong
-            >
-            using the <strong class="text-violet-400">NEAT</strong> algorithm using
-            the probed data as input;
-          </li>
-          <li>
-            Emulated the output of the generated <strong class="text-violet-400"
+            Developed a motor layer capable of emulating the output of the generated <strong class="text-violet-400"
               >neural networks</strong
-            > back into the running process for visible action and evaluation.
+            > back into the running process.
           </li>
+          <li><strong class="text-violet-400">C#</strong> and embedded <strong class="text-violet-400">AutoIt</strong> were used for this project.</li>
           <li>
-            Click <a href="https://repositorium.sdum.uminho.pt/handle/1822/92593" target="_blank" class="text-violet-400">here</a> for the RepositoriUM.
-          </li>
-          <li>
-            Verify <a href="http://cp.eng.uminho.pt/prova.aspx?id=7464" target="_blank" class="text-violet-400">here</a> the evaluation.
+            Verifiable <a href="http://cp.eng.uminho.pt/prova.aspx?id=7464" target="_blank" class="text-violet-400">here</a>. 
+            Available on <a href="https://repositorium.sdum.uminho.pt/handle/1822/92593" target="_blank" class="text-violet-400">RepositoriUM</a>.
           </li>
         </ul>
       </Step>
@@ -339,7 +366,12 @@
             <h3 class="text-2xl sm:text-3xl md:text-5xl">
               {benefit.name}
             </h3>
-            <p>{benefit.description}</p>
+            <p
+            class="transition-transform duration-300"
+            bind:this={benefitRefs[index]}
+          >
+            {benefit.description}
+          </p>
           </div>
         </div>
       {/each}
