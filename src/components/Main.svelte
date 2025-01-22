@@ -103,9 +103,9 @@
     </div>
     <div class="relative shadow-2xl grid place-items-center">
       <img
-      src={"images/profile.png"}
-      alt="Zetane Engine"
-      class="object-cover z-[2] max-h-[60vh] transition-transform duration-300 transform hover:scale-110 hover:-rotate-6"
+        src={"images/profile.png"}
+        alt="Zetane Engine"
+        class="object-cover z-[2] max-h-[60vh]"
       />
     </div>
     <!-- <div  class="flex p-0.5 relative max-w-[700px] w-full mx-auto">
@@ -193,12 +193,6 @@
               >neural networks</strong
             > back into the running process for visible action and evaluation.
           </li>
-            <li>
-              Click <a href="https://repositorium.sdum.uminho.pt/handle/1822/92593" target="_blank" class="text-violet-400">here</a> for the RepositoriUM.
-            </li>
-            <li>
-              Verify <a href="http://cp.eng.uminho.pt/prova.aspx?id=7464" target="_blank" class="text-violet-400">here</a> the evaluation.
-            </li>
         </ul>
       </Step>
     </div>
