@@ -79,12 +79,12 @@
       debounce((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("scale-125");
+            entry.target.classList.add("scale-110");
           } else {
-            entry.target.classList.remove("scale-125");
+            entry.target.classList.remove("scale-110");
           }
         });
-      }, 50),
+      }, 200),
       {
         threshold: 0.9
       }
