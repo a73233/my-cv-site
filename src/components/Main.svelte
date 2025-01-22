@@ -66,10 +66,17 @@
   ];
 
   let benefitRefs = [];
+  function debounce(func, wait) {
+    let timeout;
+    return function (...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+  }
 
   onMount(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
+      debounce((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("scale-125");
@@ -77,9 +84,9 @@
             entry.target.classList.remove("scale-125");
           }
         });
-      },
+      }, 50),
       {
-        threshold: 0.95
+        threshold: 0.9
       }
     );
 
