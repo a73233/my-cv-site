@@ -84,9 +84,9 @@
             entry.target.classList.remove("scale-110");
           }
         });
-      }, 200),
+      }, 100),
       {
-        threshold: 0.9
+        threshold: 0.8
       }
     );
 
