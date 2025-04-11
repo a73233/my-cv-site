@@ -10,10 +10,16 @@
     document.body.scrollIntoView();
   }
 
+  export function load() {
+    return {
+      title: 'Luís Neto - Software Developer'
+    };
+  }
+
 </script>
 
 <svelte:head>
-  <title>Luís Neto - Software Development</title>
+  <title>{title}</title>
 </svelte:head>
 
 <div
