@@ -9,6 +9,11 @@
   function goTop() {
     document.body.scrollIntoView();
   }
+
+  onMount(() => {
+	document.title = 'Luís Neto - Software Development';
+});
+
 </script>
 
 <div
