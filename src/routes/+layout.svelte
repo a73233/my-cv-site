@@ -13,10 +13,6 @@
   // export let title = "Luís Neto - Software Developer"; // Default title
 </script>
 
-<svelte:head>
-  <title>Luís Neto - Software Development</title>
-</svelte:head>
-
 <div
   class="container relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen"
 >
