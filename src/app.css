@@ -52,3 +52,13 @@ ul li:before {
 .table-with-shadow {
   box-shadow: 0px 14px 55px rgba(34, 34, 34, 0.45); /* Customize the shadow properties as needed */
 }
+
+
+@keyframes pop {
+  0% { transform: scale(1);}
+  50% { transform: scale(1.25);}
+  100% { transform: scale(1);}
+}
+.pop-animate {
+  animation: pop 0.4s cubic-bezier(0.4, 2, 0.6, 1);
+}

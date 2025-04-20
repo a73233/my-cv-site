@@ -10,7 +10,7 @@
     document.body.scrollIntoView();
   }
 
-  export let title = "Luís Neto - Software Developer"; // Default title
+  // export let title = "Luís Neto - Software Developer"; // Default title
 </script>
 
 <svelte:head>

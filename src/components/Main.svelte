@@ -66,6 +66,35 @@
   ];
 
   let benefitRefs = [];
+  let rotateX = 0;
+  let rotateY = 0;
+  let isHovering = false;
+  let iconRefs = [];
+  let iconsInView = false;
+  let svelteIconRef;
+  let tailwindIconRef;
+  let iconsPop = false;
+
+  function handleMouseMove(event) {
+    const card = event.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateMax = 15; // degrees
+
+    rotateY = ((x - centerX) / centerX) * rotateMax;
+    rotateX = -((y - centerY) / centerY) * rotateMax;
+    isHovering = true;
+  }
+
+  function handleMouseLeave() {
+    rotateX = 0;
+    rotateY = 0;
+    isHovering = false;
+  }
+
   onMount(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -86,10 +115,32 @@
       observer.observe(ref);
     });
 
+    // Icon observer for pop effect
+    const iconObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            iconsPop = false; // reset in case user scrolls quickly
+            setTimeout(() => {
+              iconsPop = true;
+              setTimeout(() => {
+                iconsPop = false;
+              }, 400); // match animation duration
+            }, 500); // delay before starting the pop animation
+          }
+        });
+      },
+      { threshold: 0.8 }
+    );
+    if (svelteIconRef) iconObserver.observe(svelteIconRef);
+    if (tailwindIconRef) iconObserver.observe(tailwindIconRef);
+
     return () => {
       benefitRefs.forEach((ref) => {
         observer.unobserve(ref);
       });
+      if (svelteIconRef) iconObserver.unobserve(svelteIconRef);
+      if (tailwindIconRef) iconObserver.unobserve(tailwindIconRef);
     };
   });
 </script>
@@ -103,7 +154,7 @@
       class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
     >
       <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-        Hi! I'm <span class="poppins text-violet-400">Luís</span> Neto
+        Hi! I'm <span class="poppins text-violet-400">Luís</span> Neto,
         <br />Software
         <span class="poppins text-violet-400">Developer</span>
       </h2>
@@ -130,11 +181,22 @@
         <h4 class="relative z-9">Get in touch &rarr;</h4>
       </button>
     </div>
-    <div class="relative shadow-2xl grid place-items-center">
+    <div 
+      class="relative shadow-2xl grid place-items-center"
+      style="perspective: 1000px;"
+      role="presentation"
+      on:mousemove={handleMouseMove}
+      on:mouseleave={handleMouseLeave}
+    >
       <img
         src={"images/profile.png"}
-        alt="Zetane Engine"
-        class="object-cover z-[2] max-h-[60vh] transition-transform duration-300 transform hover:scale-95 hover:-rotate-3"
+        alt="Luis Neto Profile"
+        class="object-cover z-[2] max-h-[60vh] transition-transform duration-0"
+        style="transform: 
+          rotateX({rotateX}deg) 
+          rotateY({rotateY}deg) 
+          scale({isHovering ? 1.05 : 1}); 
+          filter: drop-shadow({isHovering ? '0 0 20px rgba(139, 92, 246, 0.5)' : '0 0 0 transparent'})"
       />
     </div>
     <!-- <div  class="flex p-0.5 relative max-w-[700px] w-full mx-auto">
@@ -366,7 +428,7 @@
               {benefit.name}
             </h3>
             <p
-            class="transition-transform duration-300"
+            class="transition-transform duration-75"
             bind:this={benefitRefs[index]}
           >
             {benefit.description}
@@ -443,9 +505,19 @@
     <div class="mx-auto">
       <div class="flex items-center">
         <p class="md:text-2xl ml-2 px-2">Made with</p>
-        <i class="devicon-svelte-plain" style="font-size: 3em;" />
+        <i
+          class="devicon-svelte-plain"
+          style="font-size: 3em;"
+          bind:this={svelteIconRef}
+          class:pop-animate={iconsPop}
+        />
         <p class="md:text-2xl ml-2 px-2">and</p>
-        <i class="devicon-tailwindcss-plain" style="font-size: 3em;" />
+        <i
+          class="devicon-tailwindcss-plain"
+          style="font-size: 3em;"
+          bind:this={tailwindIconRef}
+          class:pop-animate={iconsPop}
+        />
       </div>
     </div>
   </section>
