@@ -8,9 +8,9 @@
     "Luís Neto - Software Developer",
     '$echo "I should really update my LinkedIn"',
     "Luís Neto - Computer Scientist",
-    '$more "CV.txt"',
+    '$echo "I made this, using SvelteKit"',
     "Luís Neto - Software Engineer",
-    '$echo "I made this."',
+    '$more "CV.txt"',
   ];
   let titleIndex = 0;
   let interval;
