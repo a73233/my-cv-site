@@ -55,10 +55,10 @@
       <i class="fab fa-linkedin-in px-2" />
       <b class="pr-2">LinkedIn</b>
       <a
-        href="https://www.linkedin.com/in/luís-neto-10356886/"
+        href="https://www.linkedin.com/in/luis-neto-10356886/"
         target="_blank"
         class="text-violet-400"
-        >https://www.linkedin.com/in/luís-neto-10356886/<sup class=""
+        >https://www.linkedin.com/in/luis-neto-10356886/<sup class=""
           ><span class="text-xs scale-75 pl-0.5"
             ><i
               class="fa-solid fa-arrow-up-right-from-square text-xs scale-[75%]"
