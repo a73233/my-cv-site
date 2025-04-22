@@ -31,11 +31,11 @@
     />
     <meta name="viewport" content="width=device-width" />
     
-		<link rel="modulepreload" href="/my-cv-site/_app/immutable/entry/start.1cf9666a.js">
+		<link rel="modulepreload" href="/my-cv-site/_app/immutable/entry/start.924e650f.js">
 		<link rel="modulepreload" href="/my-cv-site/_app/immutable/chunks/scheduler.46401592.js">
-		<link rel="modulepreload" href="/my-cv-site/_app/immutable/chunks/singletons.941986da.js">
-		<link rel="modulepreload" href="/my-cv-site/_app/immutable/chunks/paths.2d2938a4.js">
-		<link rel="modulepreload" href="/my-cv-site/_app/immutable/entry/app.4fa7b650.js">
+		<link rel="modulepreload" href="/my-cv-site/_app/immutable/chunks/singletons.825183e6.js">
+		<link rel="modulepreload" href="/my-cv-site/_app/immutable/chunks/paths.2b0a16d3.js">
+		<link rel="modulepreload" href="/my-cv-site/_app/immutable/entry/app.faeb88a2.js">
 		<link rel="modulepreload" href="/my-cv-site/_app/immutable/chunks/index.b7201eb9.js">
   </head>
 
@@ -46,7 +46,7 @@
     <div style="display: contents" class="relative z-[1]">
 			<script>
 				{
-					__sveltekit_fgswhq = {
+					__sveltekit_8qaxv5 = {
 						assets: "/my-cv-site",
 						base: "/my-cv-site",
 						env: {}
@@ -55,8 +55,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/my-cv-site/_app/immutable/entry/start.1cf9666a.js"),
-						import("/my-cv-site/_app/immutable/entry/app.4fa7b650.js")
+						import("/my-cv-site/_app/immutable/entry/start.924e650f.js"),
+						import("/my-cv-site/_app/immutable/entry/app.faeb88a2.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
@@ -71,6 +71,21 @@
       particlesJS.load("particles-js", "assets/particles.json", function () {
         // console.log("callback - particles.js config loaded");
       });
+
+      // Title rotation script
+      const titles = [
+        "Luís Neto - Software Developer",
+        '$echo "I should really update my LinkedIn"',
+        "Luís Neto - Computer Scientist",
+        '$more "CV.txt"',
+        "Luís Neto - Software Engineer",
+        '$echo "I made this."',
+      ];
+      let titleIndex = 0;
+      setInterval(() => {
+        titleIndex = (titleIndex + 1) % titles.length;
+        document.title = titles[titleIndex];
+      }, 30000); // 30 seconds
     </script>
   </body>
 </html>
