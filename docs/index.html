@@ -32,15 +32,15 @@
     <meta name="viewport" content="width=device-width" />
     
 		<link href="./_app/immutable/assets/0.3fc3507b.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.924e650f.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.eff75845.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.46401592.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.825183e6.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.2b0a16d3.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.faeb88a2.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.ecdc9de3.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.85b2da75.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.57d937c4.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.b7201eb9.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.01a1dc68.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scrollUtils.830f99d8.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.7b76c8e4.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.4521201e.js">
   </head>
 
   <body
@@ -97,7 +97,7 @@
 			
 			<script>
 				{
-					__sveltekit_8qaxv5 = {
+					__sveltekit_s3aikz = {
 						assets: "/my-cv-site",
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
@@ -108,8 +108,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.924e650f.js"),
-						import("./_app/immutable/entry/app.faeb88a2.js")
+						import("./_app/immutable/entry/start.eff75845.js"),
+						import("./_app/immutable/entry/app.57d937c4.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
@@ -129,21 +129,6 @@
       particlesJS.load("particles-js", "assets/particles.json", function () {
         // console.log("callback - particles.js config loaded");
       });
-
-      // Title rotation script
-      const titles = [
-        "Luís Neto - Software Developer",
-        '$echo "I should really update my LinkedIn"',
-        "Luís Neto - Computer Scientist",
-        '$more "CV.txt"',
-        "Luís Neto - Software Engineer",
-        '$echo "I made this."',
-      ];
-      let titleIndex = 0;
-      setInterval(() => {
-        titleIndex = (titleIndex + 1) % titles.length;
-        document.title = titles[titleIndex];
-      }, 30000); // 30 seconds
     </script>
   </body>
 </html>

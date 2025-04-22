@@ -4,6 +4,26 @@
   import { base } from "$app/paths";
   import { onMount } from "svelte";
 
+  const titles = [
+    "Luís Neto - Software Developer",
+    '$echo "I should really update my LinkedIn"',
+    "Luís Neto - Computer Scientist",
+    '$more "CV.txt"',
+    "Luís Neto - Software Engineer",
+    '$echo "I made this."',
+  ];
+  let titleIndex = 0;
+  let interval;
+
+  onMount(() => {
+    document.title = titles[titleIndex];
+    interval = setInterval(() => {
+      titleIndex = (titleIndex + 1) % titles.length;
+      document.title = titles[titleIndex];
+    }, 30000);
+    return () => clearInterval(interval);
+  });
+
   let steps = [
     {
       name: "Relational and Non-Relational Database Systems",

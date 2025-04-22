@@ -46,21 +46,6 @@
       particlesJS.load("particles-js", "assets/particles.json", function () {
         // console.log("callback - particles.js config loaded");
       });
-
-      // Title rotation script
-      const titles = [
-        "Luís Neto - Software Developer",
-        '$echo "I should really update my LinkedIn"',
-        "Luís Neto - Computer Scientist",
-        '$more "CV.txt"',
-        "Luís Neto - Software Engineer",
-        '$echo "I made this."',
-      ];
-      let titleIndex = 0;
-      setInterval(() => {
-        titleIndex = (titleIndex + 1) % titles.length;
-        document.title = titles[titleIndex];
-      }, 30000); // 30 seconds
     </script>
   </body>
 </html>
