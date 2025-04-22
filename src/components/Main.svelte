@@ -4,6 +4,26 @@
   import { base } from "$app/paths";
   import { onMount } from "svelte";
 
+  const titles = [
+    "Luís Neto - Software Developer",
+    '$echo "I should really update my LinkedIn"',
+    "Luís Neto - Computer Scientist",
+    '$echo "I made this, using SvelteKit"',
+    "Luís Neto - Software Engineer",
+    '$more "CV.txt"',
+  ];
+  let titleIndex = 0;
+  let interval;
+
+  onMount(() => {
+    document.title = titles[titleIndex];
+    interval = setInterval(() => {
+      titleIndex = (titleIndex + 1) % titles.length;
+      document.title = titles[titleIndex];
+    }, 30000);
+    return () => clearInterval(interval);
+  });
+
   let steps = [
     {
       name: "Relational and Non-Relational Database Systems",
@@ -161,8 +181,12 @@
       <div class="text-base sm:text-lg md:text-xl">
         <p>
           I'm a Licensed <span class="text-violet-400">Computer Scientist</span>
-          with a Master's in
-          <span class="text-violet-400">Informatics Engineering</span> from the University
+            with a Master's in
+            <a 
+              href="http://cp.eng.uminho.pt/prova.aspx?id=7464" 
+              target="_blank" 
+              class="text-violet-300 hover:text-violet-200 underline underline-offset-2 hover:underline-offset-4 transition-all"
+            >Informatics Engineering</a> from the University
           of Minho.
         </p>
         <p class="py-5">
@@ -284,8 +308,8 @@
           </li>
           <li><strong class="text-violet-400">C#</strong> and embedded <strong class="text-violet-400">AutoIt</strong> were used for this project.</li>
           <li>
-            Verifiable <a href="http://cp.eng.uminho.pt/prova.aspx?id=7464" target="_blank" class="text-violet-400">here</a>. 
-            Available on <a href="https://repositorium.sdum.uminho.pt/handle/1822/92593" target="_blank" class="text-violet-400">RepositoriUM</a>.
+            Verifiable <a href="http://cp.eng.uminho.pt/prova.aspx?id=7464" target="_blank" class="text-violet-300 hover:text-violet-200 underline underline-offset-2 hover:underline-offset-4 transition-all">here</a>. 
+            Available on <a href="https://repositorium.sdum.uminho.pt/handle/1822/92593" target="_blank" class="text-violet-300 hover:text-violet-200 underline underline-offset-2 hover:underline-offset-4 transition-all">RepositoriUM</a>.
           </li>
         </ul>
       </Step>
