@@ -81,7 +81,7 @@
     {
       name: "Flexible and Adaptable",
       description:
-        "I embrace flexibility and adaptability as essential traits in my role as a programmer. Technology evolves rapidly, demanding agile problem-solving. I excel in various languages and eagerly learn new ones. I stay current with industry trends. I approach novel challenges with creativity. I adapt to diverse teams and stakeholders, effectively bridging technical and non-technical gaps. In the dynamic world of programming, I'm well-prepared to tackle any obstacle and seize opportunities.",
+        "I embrace flexibility and adaptability as essential traits in my role as a programmer. Technology evolves rapidly, demanding agile problem-solving. I excel in various languages and eagerly learn new ones. I stay current with industry trends. I approach novel challenges with creativity. I adapt to diverse teams, effectively bridging technical and non-technical gaps. In the dynamic world of programming, I'm well-prepared to tackle any obstacle and seize opportunities.",
     },
   ];
 
