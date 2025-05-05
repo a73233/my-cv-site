@@ -280,11 +280,8 @@
         <ul class="py-14">
           <li>
             Developed a new architecture capable of supporting the
-            functionalities present in <strong class="text-violet-400"
-              ><a href="http://ivy.di.uminho.pt/" target="_blank"
-                >Ivy Workbench</a
-              ></strong
-            >, a model based tool for the analysis of interactive systems
+            functionalities present in <a href="http://ivy.di.uminho.pt/" target="_blank" class="text-violet-300 hover:text-violet-200 underline underline-offset-2 hover:underline-offset-4 transition-all">Ivy Workbench</a
+              >, a model based tool for the analysis of interactive systems
             designs, using the concept of modularity introduced in
             <strong class="text-violet-400">Java 9</strong>.
           </li>
