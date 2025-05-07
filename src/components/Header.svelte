@@ -5,9 +5,6 @@
   export let tabs = [
     { name: "Projects ", link: "#projects" },
     { name: "About me", link: "#about" },
-    // { name: "Blog", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-    // { name: "Contact", link: "" },
-    // {name: '', link: ''},
   ];
 </script>
 

@@ -10,7 +10,7 @@
     "Luís Neto - Computer Scientist",
     '$echo "I made this, using SvelteKit"',
     "Luís Neto - Software Engineer",
-    '$more "CV.txt"',
+    '$cat ./cv.txt',
   ];
   let titleIndex = 0;
   let interval;
