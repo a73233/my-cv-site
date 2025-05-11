@@ -171,7 +171,7 @@
     class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14"
   >
     <div
-      class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
+      class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10 z-10"
     >
       <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
         Hi! I'm <span class="poppins text-violet-400">Luís</span> Neto,
@@ -206,7 +206,7 @@
       </button>
     </div>
     <div 
-      class="relative shadow-2xl grid place-items-center"
+      class="relative shadow-2xl grid place-items-center z-10"
       style="perspective: 1000px;"
       role="presentation"
       on:mousemove={handleMouseMove}
@@ -239,7 +239,7 @@
             />
         </div> -->
   </section>
-  <section class="py-20 lg:py-32 flex flex-col gap-24" id="projects">
+  <section class="py-20 lg:py-32 flex flex-col gap-24 z-10" id="projects">
     <div class="flex flex-col gap-2 text-center">
       <h6 class="text-large sm:text-xl md:text-2xl">
         Professional, <span class="poppins text-violet-400">disciplined</span> and
