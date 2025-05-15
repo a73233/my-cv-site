@@ -183,7 +183,8 @@
           I'm a Licensed <span class="text-violet-400">Computer Scientist</span>
             with a Master's in
             <a 
-              href="http://cp.eng.uminho.pt/prova.aspx?id=7464" 
+              href="http://cp.eng.uminho.pt/prova.aspx?id=7464"
+              aria-label="Link to my Master Thesis final evaluation"
               target="_blank" 
               class="text-violet-300 hover:text-violet-200 underline underline-offset-2 hover:underline-offset-4 transition-all"
             >Informatics Engineering</a> from the University
@@ -213,9 +214,9 @@
       on:mouseleave={handleMouseLeave}
     >
       <img
-        src={"images/profile.png"}
+        src={"images/profile.avif"}
         alt="Luis Neto Profile"
-        class="object-cover z-[2] max-h-[60vh] transition-transform duration-0"
+        class="object-cover z-[2] max-h-[50vh] transition-transform duration-0"
         style="transform: 
           rotateX({rotateX}deg) 
           rotateY({rotateY}deg) 
@@ -305,7 +306,7 @@
           </li>
           <li><strong class="text-violet-400">C#</strong> and embedded <strong class="text-violet-400">AutoIt</strong> were used for this project.</li>
           <li>
-            Verifiable <a href="http://cp.eng.uminho.pt/prova.aspx?id=7464" target="_blank" class="text-violet-300 hover:text-violet-200 underline underline-offset-2 hover:underline-offset-4 transition-all">here</a>. 
+            Verifiable <a href="http://cp.eng.uminho.pt/prova.aspx?id=7464" aria-label="Link to my Master Thesis final evaluation" target="_blank" class="text-violet-300 hover:text-violet-200 underline underline-offset-2 hover:underline-offset-4 transition-all">here</a>. 
             Available on <a href="https://repositorium.sdum.uminho.pt/handle/1822/92593" target="_blank" class="text-violet-300 hover:text-violet-200 underline underline-offset-2 hover:underline-offset-4 transition-all">RepositoriUM</a>.
           </li>
         </ul>
